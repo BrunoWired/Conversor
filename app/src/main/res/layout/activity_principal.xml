@@ -1,0 +1,141 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout">
+
+        <EditText
+            android:id="@+id/edit_valor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:hint="Insira um valor"
+            android:inputType="numberDecimal"
+            android:onClick="limparSpinner"
+            android:longClickable="false"
+            android:layout_weight="1" />
+
+        <Spinner
+            android:id="@+id/spinner_unidade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/edit_valor"
+            android:spinnerMode="dropdown"
+            android:layout_weight="2" />
+
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/linearLayout"
+        android:layout_marginTop="10dp"
+        android:background="#e1eef4"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp">
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:baselineAligned="false">
+
+            <TextView
+                android:id="@+id/titulo_polegada"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="IN"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/titulo_paica"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PICA"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/titulo_ponto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PT"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/titulo_milimetro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MM"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:gravity="center" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:id="@+id/txt_polegada"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:textSize="18dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textIsSelectable="true" />
+
+            <TextView
+                android:id="@+id/txt_paica"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:textSize="18dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textIsSelectable="true" />
+
+            <TextView
+                android:id="@+id/txt_ponto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:textSize="18dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textIsSelectable="true" />
+
+            <TextView
+                android:id="@+id/txt_milimetro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:textSize="18dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textIsSelectable="true" />
+        </TableRow>
+
+    </TableLayout>
+
+</RelativeLayout>

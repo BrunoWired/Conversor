@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="unidades_conversao">
+        <item>Escolha</item>
+        <item>IN</item>
+        <item>PICA</item>
+        <item>PT</item>
+        <item>MM</item>
+    </string-array>
+</resources>
